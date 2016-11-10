@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/main"
+    tools:context="com.example.hellen.agenda_proyecto.MainActivity1">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="174dp"
+        android:id="@+id/grid_main"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar_text"
+        android:id="@+id/agregarbtn"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lvlitems"
+        android:headerDividersEnabled="false"
+        android:layout_below="@+id/hora_txt" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hora"
+        android:id="@+id/hora_txt"
+        android:layout_alignTop="@+id/titulo_txt"
+        android:layout_toRightOf="@+id/agregarbtn"
+        android:layout_toEndOf="@+id/agregarbtn" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Titulo"
+        android:id="@+id/titulo_txt"
+        android:layout_below="@+id/agregarbtn"
+        android:layout_toLeftOf="@+id/agregarbtn"
+        android:layout_toStartOf="@+id/agregarbtn" />
+
+</RelativeLayout>
