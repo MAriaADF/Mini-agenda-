@@ -30,26 +30,6 @@
         android:layout_height="match_parent"
         android:id="@+id/lvlitems"
         android:headerDividersEnabled="false"
-        android:layout_below="@+id/hora_txt" />
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="20dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Hora"
-        android:id="@+id/hora_txt"
-        android:layout_alignTop="@+id/titulo_txt"
-        android:layout_toRightOf="@+id/agregarbtn"
-        android:layout_toEndOf="@+id/agregarbtn" />
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="20dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Titulo"
-        android:id="@+id/titulo_txt"
-        android:layout_below="@+id/agregarbtn"
-        android:layout_toLeftOf="@+id/agregarbtn"
-        android:layout_toStartOf="@+id/agregarbtn" />
+        android:layout_below="@+id/agregarbtn" />
 
 </RelativeLayout>

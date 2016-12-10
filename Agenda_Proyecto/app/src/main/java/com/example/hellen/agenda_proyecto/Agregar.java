@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -95,6 +96,8 @@ public class Agregar extends Activity {
 
        AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
        dlgAlert.setMessage("Los datos se han guardado ");
+       Intent i = new Intent(this, MainActivity1.class);
+       startActivity(i);
        dlgAlert.setTitle("Agregar Nota");
        dlgAlert.setPositiveButton("Ok",
                new DialogInterface.OnClickListener() {

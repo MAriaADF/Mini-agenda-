@@ -112,7 +112,7 @@ public class MainActivity1 extends Activity implements OnItemClickListener {
                         dialog.cancel();
                         break;
 
-                    case 3:
+                    case 2:
                         //Cierra el dialogo
                         dialog.cancel();
                         break;
