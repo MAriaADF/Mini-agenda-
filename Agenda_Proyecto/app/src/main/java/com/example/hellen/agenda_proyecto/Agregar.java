@@ -23,15 +23,16 @@ import java.util.Date;
  */
 
 public class Agregar extends Activity {
-    
+    private Date data;
+    private NotasDataSource dataSource;
+    private int horas;
+    private int minutos;
     EditText titulo_input;
     EditText hora_input;
     EditText lugar_input;
     EditText descrip_input;
     EditText fecha_input;
-    private Date data;
-    private NotasDataSource dataSource;
-    private int horas, minutos;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +106,7 @@ public class Agregar extends Activity {
    }
 
 
-    private void exibeData()
+    private void fecha()
     {
         Calendar calendar = Calendar.getInstance();
         int año = calendar.get(Calendar.YEAR);
@@ -120,13 +121,13 @@ public class Agregar extends Activity {
     {
         @Override
         public void onClick(View v) {
-            exibeData();
+            fecha();
         }
 
         @Override
         public void onFocusChange(View v, boolean hasFocus) {
             if (hasFocus)
-                exibeData();
+                fecha();
         }
 
     }

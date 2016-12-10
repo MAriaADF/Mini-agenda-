@@ -80,7 +80,7 @@ public class MainActivity1 extends Activity implements OnItemClickListener {
     public void onItemClick(final AdapterView<?> adapterView, View view,
                             final int position, long id) {
 
-        final CharSequence[] items = {"Detalles", "Editar", "Eliminar", "Cerrar"};
+        final CharSequence[] items = {"Detalles", "Eliminar", "Cerrar"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Seleccione:");
@@ -105,9 +105,6 @@ public class MainActivity1 extends Activity implements OnItemClickListener {
 
                     case 1:
 
-                        break;
-
-                    case 2:
                         //Elimina los datos del id  que pertenece al item que
                         // fue selecionado y actualiza la lista
                         dataSource.BorrarNota(nota);

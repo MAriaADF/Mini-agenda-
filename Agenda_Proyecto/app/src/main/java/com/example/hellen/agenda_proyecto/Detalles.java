@@ -16,7 +16,11 @@ import android.widget.TextView;
 public class Detalles extends Activity {
 
     private NotasDataSource dataSource;
-    TextView txtTitulo, txtHora, txtLugar,txtDescrip,txtFecha;
+    TextView txtTitulo;
+    TextView txtHora;
+    TextView txtLugar;
+    TextView txtDescrip;
+    TextView txtFecha;
     Button btnCerra;
 
     @Override
